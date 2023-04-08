@@ -7,6 +7,11 @@ body {
 
 /* Estilos de encabezado */
 header {
+    /* width: 100%;
+	left: 0; 
+	top: 0; 
+	position: fixed;  */
+    overflow: hidden;
     background-color: #333;
     color: #fff;
     display: flex;
