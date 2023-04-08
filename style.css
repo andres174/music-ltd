@@ -1,0 +1,216 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de secciones */
+section {
+    padding: 50px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos de formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #666;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* slider */
+
+/* Estilos generales */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-items {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-item {
+    flex-shrink: 0;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-control {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 100px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para el botón previo */
+.slider-control[data-slide="prev"] {
+    transform: rotate(0deg);
+}
+
+/* Estilos específicos para el botón siguiente */
+.slider-control[data-slide="next"] {
+    transform: rotate(180deg);
+}
+
+/* Estilos de la diapositiva activa */
+.slider-items[data-slide="0"] {
+    transform: translateX(0%);
+}
+
+.slider-items[data-slide="1"] {
+    transform: translateX(-100%);
+}
+
+.slider-items[data-slide="2"] {
+    transform: translateX(-200%);
+}
+
+/* ---------------------- */
+/* CARD */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .info {
+    padding: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card a:hover {
+    background-color: #0066cc;
+}

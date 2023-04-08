@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi sitio web de música</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Mi sitio web de música</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>Texto informativo sobre el sitio web y su propósito.</p>
+            <div class="slider">
+                <div class="slider-items">
+                    <div class="slider-item">
+                        <img src="https://picsum.photos/1249/408" alt="Slide 1">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://picsum.photos/1249/408" alt="Slide 2">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://picsum.photos/1249/408" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-control" data-slide="prev">&lt;</button>
+                    <button class="slider-control" data-slide="next">&lt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="artistas">
+            <h2>Artistas</h2>
+            <ul>
+                <li><a href="#">Artista 1</a></li>
+                <li><a href="#">Artista 2</a></li>
+                <li><a href="#">Artista 3</a></li>
+            </ul>
+            <div class="card">
+                <img src="https://picsum.photos/300" alt="Imagen del artista">
+                <div class="info">
+                    <h2>Nombre del artista</h2>
+                    <p>Descripción del artista y su música.</p>
+                    <a href="enlace-a-su-página-web-o-red-social">Más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <ul>
+                <li>
+                    <a href="#">Evento 1</a>
+                </li>
+                <li><a href="#">Evento 2</a></li>
+                <li><a href="#">Evento 3</a></li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos reservados © 2023 Mi sitio web de música</p>
+    </footer>
+</body>
+
+<script src="slider.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider-items">
+            <div class="slider-item">
+                <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+            </div>
+            <div class="slider-item">
+                <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+            </div>
+            <div class="slider-item">
+                <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-control" data-slide="prev">&lt;</button>
+            <button class="slider-control" data-slide="next">&gt;</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    const sliderItems = document.querySelector('.slider-items');
+    const sliderControls = document.querySelectorAll('.slider-control');
+
+    let currentSlide = 0;
+    const maxSlides = sliderItems.children.length;
+
+    function moveSlider(direction) {
+        if (direction === 'next') {
+            currentSlide++;
+            if (currentSlide === maxSlides) {
+                currentSlide = 0;
+            }
+        } else if (direction === 'prev') {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = maxSlides - 1;
+            }
+        }
+
+        sliderItems.setAttribute('data-slide', currentSlide);
+    }
+
+    sliderControls.forEach(control => {
+        control.addEventListener('click', event => {
+            const direction = event.target.getAttribute('data-slide');
+            moveSlider(direction);
+        });
+    });
+
+</script>
+
+</html>
