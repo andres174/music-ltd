@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
@@ -35,50 +38,48 @@
     </header>
 
     <main>
+        <!-- SLIDER -->
         <section class="main__conatiner_slider">
             <div class="slider_cont">
-                <div class="slider">
-                    <div class="slide">
-                        <img src="img_slider/1.svg" alt="Imagen 1">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/2.svg" alt="Imagen 2">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/3.svg" alt="Imagen 3">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/4.svg" alt="Imagen 4">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/5.svg" alt="Imagen 5">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/6.svg" alt="Imagen 6">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/7.svg" alt="Imagen 7">
-                    </div>
-                    <div class="slide">
-                        <img src="img_slider/8.svg" alt="Imagen 8">
-                    </div>
-                </div>
 
-                <div class="loader">
-                </div>
-
-                <div class="controls">
-                    <div class="control active"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img_slider/1.svg" alt="Imagen 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/2.svg" alt="Imagen 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/3.svg" alt="Imagen 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/4.svg" alt="Imagen 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/5.svg" alt="Imagen 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/6.svg" alt="Imagen 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/7.svg" alt="Imagen 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img_slider/8.svg" alt="Imagen 8">
+                        </div>
+                        <!-- ... -->
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
+
     </main>
 
 
@@ -163,7 +164,8 @@
         </div>
     </footer>
 
-    <script src="slider.js"></script>
+
+    <script src="slider-sw.js"></script>
 
 </body>
 
