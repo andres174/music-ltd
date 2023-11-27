@@ -1,0 +1,44 @@
+/* Hero Banner */
+
+.hero-container {
+    background: var(--p-gray);
+}
+
+.hero-banner {
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/hero-banner/hero-banner.png');
+}
+
+.intro-container {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: start;
+    justify-content: center;
+    color: var(--white);
+}
+
+/* Artistas */
+.artists-container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cont-slider {
+    background-color: var(--s-gray);
+    height: 80%;
+    width:75%;
+    border-radius: 4rem;
+}
+
+/* Lanzamientos */
+.launch-container {
+    background-color: var(--p-l-gray);
+}

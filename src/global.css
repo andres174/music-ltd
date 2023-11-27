@@ -1,0 +1,78 @@
+:root {
+  --black: #010101;
+  --white: #fefefe;
+  --p-gray: #333333;
+  --s-gray: #575757;
+  --p-l-gray: #808080;
+  --s-l-gray: #a8a8a8;
+  --p-font: "Poppins", "sans-serif";
+  --s-font: "Plus Jakarta Sans", "sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16pt;
+  font-family: var(--s-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Utils */
+
+.m-30 {
+  margin: 30px;
+}
+
+.sect {
+  width: 100%;
+  height: 500px;
+}
+
+/* Menú */ /* No responsive */
+.menu-container {
+  background-color: var(--black);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  height: 64px;
+  width: 64px;
+  margin-left: 20px;
+}
+
+.logo-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.option-container {
+  color: var(--white);
+  margin-left: 25px;
+}
+
+.option-container a {
+  font-family: var(--p-font);
+}
+
+
+
